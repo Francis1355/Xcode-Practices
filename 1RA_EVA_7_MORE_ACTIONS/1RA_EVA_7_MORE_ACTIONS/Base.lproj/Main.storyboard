@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_7_MORE_ACTIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lamborghini-huracan-los-mejores-autos-2" translatesAutoresizingMaskIntoConstraints="NO" id="xjE-Ri-aMp">
+                                <rect key="frame" x="156" y="53" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZEa-w1-II2"/>
+                                    <constraint firstAttribute="width" constant="240" id="cKM-vc-fcO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="i7y-D4-2Ff"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="ubB-lY-ilk"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHq-BW-90E">
+                                <rect key="frame" x="156" y="247" width="424" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDownEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="fCM-i9-n7c"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvV-d7-ujV">
+                                <rect key="frame" x="85" y="256" width="67" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lbn-eA-aQe">
+                                <rect key="frame" x="156" y="300" width="424" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDownEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="oLL-3S-ujc"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqh-KA-AmH">
+                                <rect key="frame" x="108" y="303" width="44" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3r-1q-gSo">
+                                <rect key="frame" x="297" y="358" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="xjE-Ri-aMp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="0kR-Vf-1XR"/>
+                            <constraint firstItem="Lbn-eA-aQe" firstAttribute="leading" secondItem="dHq-BW-90E" secondAttribute="leading" id="74g-Cq-2DP"/>
+                            <constraint firstItem="Qqh-KA-AmH" firstAttribute="width" secondItem="KvV-d7-ujV" secondAttribute="width" id="7N0-Lh-Ugb"/>
+                            <constraint firstItem="dHq-BW-90E" firstAttribute="leading" secondItem="xjE-Ri-aMp" secondAttribute="leading" id="Kbj-NE-6yj"/>
+                            <constraint firstItem="dHq-BW-90E" firstAttribute="trailing" secondItem="Lbn-eA-aQe" secondAttribute="trailing" id="Ui1-ky-BIL"/>
+                            <constraint firstItem="KvV-d7-ujV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="65" id="YiI-1T-C6k"/>
+                            <constraint firstItem="KvV-d7-ujV" firstAttribute="bottom" secondItem="dHq-BW-90E" secondAttribute="bottom" id="as3-Dq-N3z"/>
+                            <constraint firstItem="Z3r-1q-gSo" firstAttribute="top" secondItem="Lbn-eA-aQe" secondAttribute="bottom" constant="28" id="eOT-Ux-P42"/>
+                            <constraint firstItem="Lbn-eA-aQe" firstAttribute="baseline" secondItem="Qqh-KA-AmH" secondAttribute="baseline" id="f9P-Zy-ur8"/>
+                            <constraint firstItem="Z3r-1q-gSo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="297" id="gzO-U8-QoQ"/>
+                            <constraint firstItem="Lbn-eA-aQe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="i2A-Mc-MJo"/>
+                            <constraint firstItem="dHq-BW-90E" firstAttribute="leading" secondItem="KvV-d7-ujV" secondAttribute="trailing" constant="4" id="ifF-0f-Yzy"/>
+                            <constraint firstItem="dHq-BW-90E" firstAttribute="top" secondItem="xjE-Ri-aMp" secondAttribute="bottom" constant="66" id="kbM-Ur-hEF"/>
+                            <constraint firstItem="KvV-d7-ujV" firstAttribute="trailing" secondItem="Qqh-KA-AmH" secondAttribute="trailing" id="lAr-rG-Art"/>
+                            <constraint firstItem="Lbn-eA-aQe" firstAttribute="top" secondItem="dHq-BW-90E" secondAttribute="bottom" constant="23" id="mHb-eR-ckm"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rrz-jZ-Dhm" appends="YES" id="oFz-cZ-P8p"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="txtFieldEdad" destination="Lbn-eA-aQe" id="fkd-tT-UU6"/>
+                        <outlet property="txtFieldNombre" destination="dHq-BW-90E" id="nzl-Qs-dET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rrz-jZ-Dhm">
+                    <connections>
+                        <action selector="onTapGestureRecognized:" destination="BYZ-38-t0r" id="OEo-uM-lZb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lamborghini-huracan-los-mejores-autos-2" width="1507" height="601"/>
+    </resources>
+</document>
